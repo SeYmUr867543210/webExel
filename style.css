@@ -1,0 +1,219 @@
+select {
+    margin: auto;
+    width: auto;
+    height: 30px;
+    border-radius: 100px;
+
+    /* centrirovat po document.body */
+}
+.country_wrapper {
+    width: auto;
+    height: 30px;
+    margin-left: 50%;
+    /* border: 1px solid black; */
+}
+
+/* .country_wrapper:hover>#settingsImg {
+    display: block;
+} */
+
+#settingsImg {
+    /* display: none; */
+    float: left;
+}
+
+.countryParent {
+    float: left;
+    margin-right: 10px;
+}
+
+#settingsImg {
+    /* border: 1px solid black; */
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+#settingsImg:hover,
+#editImg:hover,
+#addImg:hover,
+#deleteImg:hover,#saveImg:hover,#cancelImg:hover {
+    margin-top: 0px;
+    width: 30px;
+    height: 30px;
+    transition: ease 0.3s;
+}
+
+
+
+
+.editAddDeleteParent {
+    display: grid;
+    width: 120px;
+    height: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid black; */
+}
+.saveOrCancelParent {
+    display: grid;
+    width: 80px;
+    height: 30px;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid black; */
+}
+
+#editImg,
+#addImg,
+#deleteImg,#saveImg,#cancelImg {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+.content {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    justify-items: center;
+    margin-top: 50px;
+}
+.contentLeft{
+    border-right: 1px solid black;
+    /* border-left: 1px solid black; */
+    width: 100%;
+    text-align: center;
+}
+.servicePrices {
+    text-align: center;
+}
+.currencyWrapper {
+    padding-left: 10px;
+}
+
+
+
+
+.table {
+    text-align: center;
+    width: 600px;
+    /* border: 3px solid black; */
+}
+th, td {
+    /* border-bottom: 1px solid black; */
+    /* border-style: outset; */
+    border-style: inset;
+  }
+
+tr:hover {
+    background: #E0E0E0;
+}
+.addBtn_img {
+    width: 50px;
+    height: 50px;
+}
+.addBtn_img:hover {
+    transition: ease-out 0.3s;
+    width: 75px;
+    height: 75px;
+    /* box-shadow: 0 0 15px red; */
+}
+
+
+
+
+.curInp {
+    border-radius: 100px;
+    width: 110px;
+    height: 30px;
+}
+.curInp:hover {
+    box-shadow: 0 0 15px red;
+}
+.curInpWrapper {
+    width: 110px;
+    height: 90px;
+    margin: 0px auto;
+}
+.tickersWrapper {
+    text-align: center;
+    width: 130px;
+    height: 60px;
+    /* overflow-y: scroll; */
+}
+.tickerInWindow {
+    border-bottom: 1px solid black;
+}
+.tickerInWindow:hover {
+    background: #D8EEFA;
+    cursor: pointer;
+}
+
+
+     /*------------popup ---------------- */
+     .popupWrapper {
+        position: fixed;
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .7);
+        text-align: center
+    }
+
+    .popupParent {
+        background: rgb(255, 255, 255);
+        border-radius: 14px;
+        box-shadow: 1px 0px 5px rgb(125, 125, 125);
+        box-sizing: border-box;
+        height: 360px;
+        width: 430px;
+        padding: 20px;
+        margin: 100px auto;
+        position: relative;
+        ;
+    }
+
+    .clsBtn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+    .deleteBtn {
+        background: #f44336;
+        width: 110px;
+        height: 40px;
+        border-radius: 100px;
+        color: white;
+    }
+    .deleteBtn:hover {
+        /* width: 120px;
+        height: 50px; */
+        border: 3px solid black;
+        transition: ease .3s;
+        background: lime;
+        color: black;
+    }
+    .areYouSureToDelete {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    /*------------popup ---------------- */
